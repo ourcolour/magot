@@ -1,0 +1,194 @@
+@charset "UTF-8";
+/**
+ * Popup Styles
+ */
+html:has(#app),
+body:has(#app) {
+  margin: 0;
+  padding: 0;
+  color: #ebebeb;
+  background-color: #242424;
+  overflow: hidden;
+}
+
+#app {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* 基础布局样式 */
+  /* 标题样式 */
+  /* 按钮样式 */
+  /* input 样式*/
+  /* 超链接样式 */
+  /* 对话框样式 */
+  /* 通用按钮 */
+  /* table  */
+}
+#app * {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+}
+#app h1 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+#app button {
+  background-color: #556dea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#app button:hover {
+  background-color: #3d4fac;
+  color: #fff;
+}
+#app button:disabled {
+  background-color: #999;
+}
+#app input,
+#app textarea {
+  height: 32px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 4px 10px;
+  display: inline-flex;
+  align-items: center;
+}
+#app textarea {
+  padding: 10px 10px;
+}
+#app input:focus,
+#app textarea:focus {
+  border-color: #556dea;
+  border-width: 2px;
+}
+#app a, #app a:visited, #app a:hover {
+  text-decoration: none;
+  color: #ebebeb;
+  cursor: pointer;
+}
+#app a:hover {
+  color: #ebebeb;
+}
+#app dialog {
+  background-color: transparent;
+}
+#app .btn {
+  background-color: #242424;
+  border: 1px solid #666;
+  color: #ebebeb;
+  height: 24px;
+  font-size: 12px;
+  margin: 0;
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+}
+#app .btn.btn-primary {
+  background-color: #4f5ce7;
+  color: #ebebeb;
+}
+#app .btn:hover {
+  background-color: #8690f3;
+}
+#app table, #app th, #app tr, #app td {
+  inset: 0;
+}
+
+#app {
+  /* common */
+  /* loading 遮罩 */
+}
+#app .btn iconpark-icon {
+  margin-right: 4px;
+}
+#app .spinner {
+  display: none;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+#app .container {
+  padding: 0 10px;
+  /* header */
+  /* main */
+  /* footer */
+}
+#app .container .header {
+  margin: 10px 0;
+}
+#app .container .header .button-list {
+  display: flex;
+  column-gap: 4px;
+  justify-content: space-between;
+}
+#app .container .header .button-list .right .btn-copy {
+  display: none;
+}
+#app .container main.main {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+#app .container main.main table {
+  width: 100%;
+  min-height: 30px;
+  max-height: 800px;
+  border-collapse: collapse;
+}
+#app .container main.main table thead {
+  background-color: #333;
+}
+#app .container main.main table th {
+  font-weight: bold;
+  font-size: 16px;
+}
+#app .container main.main table tr:nth-of-type(2n+2) {
+  background-color: #333;
+}
+#app .container main.main table tr:hover {
+  background-color: #4f5ce7;
+}
+#app .container main.main table th,
+#app .container main.main table td {
+  padding: 4px 8px;
+  height: 24px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: left;
+  max-width: 80px;
+}
+#app .container main.main table th:nth-of-type(1),
+#app .container main.main table th:nth-of-type(2),
+#app .container main.main table th:nth-last-of-type(1),
+#app .container main.main table td:nth-of-type(1),
+#app .container main.main table td:nth-of-type(2),
+#app .container main.main table td:nth-last-of-type(1) {
+  width: 50px;
+  text-align: center;
+}
+#app .container main.main table td:nth-of-type(1) {
+  width: 30px;
+  text-align: center;
+}
+#app .container main.main table tfoot tr td {
+  text-align: left !important;
+  border-top: 2px solid #666;
+}
+
+/*# sourceMappingURL=sidebar.css.map */

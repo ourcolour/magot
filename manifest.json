@@ -1,0 +1,47 @@
+{
+  "manifest_version": 3,
+  "name": "Magot",
+  "version": "1.0",
+  "description": "A Chrome extension for collecting magnet-links",
+  "icons": {
+    "16": "src/icons/icon_16.png",
+    "48": "src/icons/icon_48.png",
+    "128": "src/icons/icon_128.png"
+  },
+  "action": {
+    "default_popup": "src/sidebar.html",
+    "default_icon": "src/icons/icon.png",
+    "default_title": "打开侧边栏"
+  },
+  "side_panel": {
+    "default_path": "src/sidebar.html"
+  },
+  "background": {
+    "service_worker": "src/js/bg.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "js": [
+        "src/js/cs.js"
+      ],
+      "css": [
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": [
+    "scripting",
+    "tabs",
+    "activeTab",
+    "storage",
+    "downloads",
+    "webRequest",
+    "sidePanel"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ]
+}

@@ -1,0 +1,113 @@
+/**
+ * Popup Styles
+ */
+@use './common.scss';
+@use './media.scss';
+
+#app {
+  /* common */
+  .btn {
+    iconpark-icon {
+      margin-right : 4px;
+    }
+  }
+
+  /* loading 遮罩 */
+  .spinner {
+    display         : none; // 默认隐藏
+    position        : absolute;
+    width           : 100vw;
+    height          : 100vh;
+    left            : 0;
+    right           : 0;
+    z-index         : 99;
+    background      : rgba(0, 0, 0, 0.7);
+    justify-content : center;
+    align-items     : center;
+  }
+
+  .container {
+    padding : 0 10px;
+
+    /* header */
+    .header {
+      margin : 10px 0;
+
+      .button-list {
+        display         : flex;
+        column-gap      : 4px;
+        justify-content : space-between;
+
+        .right {
+          .btn-copy {
+            display : none;
+          }
+        }
+      }
+    }
+
+    /* main */
+    main.main {
+      display        : flex;
+      flex-direction : column;
+      row-gap        : 10px;
+
+      table {
+        width           : 100%;
+        min-height      : 30px;
+        max-height      : 800px;
+        border-collapse : collapse;
+
+        thead {
+          background-color : #333;
+        }
+
+        th {
+          font-weight : bold;
+          font-size   : 16px;
+        }
+
+        tr:nth-of-type(2n+2) {
+          background-color : #333;
+        }
+
+        tr:hover {
+          background-color : #4f5ce7;
+        }
+
+        th,
+        td {
+          padding       : 4px 8px;
+          height        : 24px;
+          overflow      : hidden;
+          text-overflow : ellipsis;
+          white-space   : nowrap;
+          text-align    : left;
+          max-width     : 80px;
+        }
+
+        th:nth-of-type(1),
+        th:nth-of-type(2),
+        th:nth-last-of-type(1),
+        td:nth-of-type(1),
+        td:nth-of-type(2),
+        td:nth-last-of-type(1) {
+          width      : 50px;
+          text-align : center;
+        }
+
+        td:nth-of-type(1) {
+          width      : 30px;
+          text-align : center;
+        }
+
+        tfoot tr td {
+          text-align : left !important;
+          border-top : 2px solid #666;
+        }
+      }
+    }
+
+    /* footer */
+  }
+}

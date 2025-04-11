@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>SidePane</title>
+    <link rel="stylesheet" href="css/sidebar.css">
+    <script defer src="js/iconpark.js"></script>
+</head>
+<body>
+<div id="app">
+    <div class="container">
+        <section class="header">
+            <div class="row button-list">
+                <div class="left">
+                    <button class="btn btn-primary btn-analyze">
+                        <iconpark-icon name="search" class="icon"></iconpark-icon>
+                        分析
+                    </button>
+                </div>
+                <div class="right">
+                    <button class="btn btn-copy">
+                        <iconpark-icon name="copy-one" class="icon"></iconpark-icon>
+                        复制
+                    </button>
+                </div>
+            </div>
+        </section>
+        <main class="main">
+            <table>
+                <thead>
+                <tr>
+                    <th>
+                        <input class="check-all" type="checkbox" name="check">
+                    </th>
+                    <th>Id</th>
+                    <th>Link</th>
+                    <th>Type</th>
+                </tr>
+                </thead>
+                <tbody class="result"></tbody>
+                <tfoot>
+                <tr>
+                    <td colspan="4">总条数：<span class="total-count">0</span></td>
+                </tr>
+                </tfoot>
+            </table>
+        </main>
+        <section class="footer"></section>
+    </div>
+</div>
+<script src="js/sidebar.js"></script>
+</body>
+</html>
