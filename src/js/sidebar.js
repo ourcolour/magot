@@ -18,7 +18,17 @@ document.addEventListener('DOMContentLoaded', async () => {
  * 注册分析按钮点击事件
  */
 document.querySelector('.btn-analyze')?.addEventListener('click', async (evt) => {
+    // Dom
+    const $checkAll     = document.querySelector('.check-all');
+    const $tableRowList = document.querySelectorAll('.result tr td a.url');
+
+    // 查询数据
     await getData();
+
+    // 触发全选
+    if (0 < $tableRowList.length) {
+        $checkAll.click();
+    }
 });
 /**
  * 注册全选按钮点击事件
@@ -39,7 +49,7 @@ document.querySelector('.btn-copy')?.addEventListener('click', (evt) => {
 // --------------------
 
 // 磁力链接正则
-const MAGNET_LINK_REGEX = /(?<url>magnet:\?[^"']+)/i;
+const MAGNET_LINK_REGEX = /^(?<url>(magnet\:\?|ftp\:\/\/)[^"']+)$/si;
 
 /**
  * 复制链接列表
@@ -180,20 +190,20 @@ async function buildResultTable() {
      * @returns {string}
      */
     function _buildRow(item, index) {
-        return ` <tr>
+        return `<tr>
                     <td>
                         <input type="checkbox" name="check" value="${index}">
                     </td>
                     <td>${index}</td>
                     <td>
-                        <a class="url" href="${item.href}">${item.html}</a>
+                        <a class="url" href="${item.href}" title="${item.href}" target="_blank">${item.html}</a>
                     </td>
                     <td>
                         <a class="url" href="${item.href}">
                             <iconpark-icon name="${'magnet' === item.type ? 'magnet-gkn1jh56' : 'link-one'}"></iconpark-icon>
                         </a>
                     </td>
-                 </tr> `;
+                 </tr>`;
     }
 
     // 提取磁力链接

@@ -72,7 +72,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
 // --------------------
 
 // 磁力链接正则
-const MAGNET_LINK_REGEX = /(?:["'](?<url>magnet:\?[^"']+)["'])/gi;
+const MAGNET_LINK_REGEX = /(?:["']^(?<url>(magnet\:\?|ftp\:\/\/)[^"']+)$["'])/gi;
 
 /**
  * 提取磁力链接
