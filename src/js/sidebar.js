@@ -49,7 +49,7 @@ document.querySelector('.btn-copy')?.addEventListener('click', (evt) => {
 // --------------------
 
 // 磁力链接正则
-const MAGNET_LINK_REGEX = /^(?<url>(magnet\:\?|ftp\:\/\/)[^"']+)$/si;
+const MAGNET_LINK_REGEX = /^(?<url>(magnet\:\?|ftp\:\/\/|ed2k\:\/\/)[^"']+)$/si;
 
 /**
  * 复制链接列表
