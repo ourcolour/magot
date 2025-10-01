@@ -6,6 +6,8 @@
 
 一款用于Chrome和Firefox浏览器的智能链接提取插件，能够自动识别并提取网页中的下载链接。
 
+<img src="screen.png" alt="screen" style="width: 320px;" />
+
 ## 功能特性
 
 - 🔍 **智能分析** - 自动扫描当前网页中的磁力、BT、FTP下载链接
@@ -47,40 +49,40 @@
 
 将选中的项目结构部分转换为表格形式：
 
-| 路径 | 类型 | 描述 |
-|------|------|------|
-| magot/ | 目录 | 项目根目录 |
-| src/ | 目录 | 源代码目录 |
-| src/css/ | 目录 | 样式文件目录 |
-| src/css/common.scss | 文件 | 通用样式（SCSS源文件） |
-| src/css/common.css | 文件 | 编译后的通用样式 |
-| src/css/common.css.map | 文件 | Source map文件 |
-| src/css/media.scss | 文件 | 媒体查询样式 |
-| src/css/media.css | 文件 | 编译后的媒体样式 |
-| src/css/media.css.map | 文件 | Source map文件 |
-| src/css/sidebar.scss | 文件 | 侧边栏样式 |
-| src/css/sidebar.css | 文件 | 编译后的侧边栏样式 |
-| src/css/sidebar.css.map | 文件 | Source map文件 |
-| src/icons/ | 目录 | 图标资源目录 |
-| src/icons/SVG/ | 目录 | SVG矢量图标目录 |
-| src/icons/SVG/icon-download.svg | 文件 | 下载图标 |
-| src/icons/SVG/icon-refresh.svg | 文件 | 刷新图标 |
-| src/icons/SVG/icon-settings.svg | 文件 | 设置图标 |
-| src/icons/icon.png | 文件 | 主图标 |
-| src/icons/icon_16.png | 文件 | 16x16图标 |
-| src/icons/icon_48.png | 文件 | 48x48图标 |
-| src/icons/icon_128.png | 文件 | 128x128图标 |
-| src/js/ | 目录 | JavaScript脚本目录 |
-| src/js/bg.js | 文件 | 后台脚本（背景页） |
-| src/js/cs.js | 文件 | 内容脚本 |
-| src/js/iconpark.js | 文件 | 图标库相关脚本 |
-| src/js/sidebar.js | 文件 | 侧边栏功能脚本 |
-| src/js/utils.js | 文件 | 工具函数 |
-| src/js/sidebar.html | 文件 | 侧边栏HTML界面 |
-| LICENSE | 文件 | Apache-2.0许可证文件 |
-| manifest.json | 文件 | 浏览器插件清单文件 |
-| README.md | 文件 | 项目说明文档 |
-| screen.png | 文件 | 插件截图 |
+| 路径                            | 类型 | 描述                   |
+| ------------------------------- | ---- | ---------------------- |
+| magot/                          | 目录 | 项目根目录             |
+| src/                            | 目录 | 源代码目录             |
+| src/css/                        | 目录 | 样式文件目录           |
+| src/css/common.scss             | 文件 | 通用样式（SCSS源文件） |
+| src/css/common.css              | 文件 | 编译后的通用样式       |
+| src/css/common.css.map          | 文件 | Source map文件         |
+| src/css/media.scss              | 文件 | 媒体查询样式           |
+| src/css/media.css               | 文件 | 编译后的媒体样式       |
+| src/css/media.css.map           | 文件 | Source map文件         |
+| src/css/sidebar.scss            | 文件 | 侧边栏样式             |
+| src/css/sidebar.css             | 文件 | 编译后的侧边栏样式     |
+| src/css/sidebar.css.map         | 文件 | Source map文件         |
+| src/icons/                      | 目录 | 图标资源目录           |
+| src/icons/SVG/                  | 目录 | SVG矢量图标目录        |
+| src/icons/SVG/icon-download.svg | 文件 | 下载图标               |
+| src/icons/SVG/icon-refresh.svg  | 文件 | 刷新图标               |
+| src/icons/SVG/icon-settings.svg | 文件 | 设置图标               |
+| src/icons/icon.png              | 文件 | 主图标                 |
+| src/icons/icon_16.png           | 文件 | 16x16图标              |
+| src/icons/icon_48.png           | 文件 | 48x48图标              |
+| src/icons/icon_128.png          | 文件 | 128x128图标            |
+| src/js/                         | 目录 | JavaScript脚本目录     |
+| src/js/bg.js                    | 文件 | 后台脚本（背景页）     |
+| src/js/cs.js                    | 文件 | 内容脚本               |
+| src/js/iconpark.js              | 文件 | 图标库相关脚本         |
+| src/js/sidebar.js               | 文件 | 侧边栏功能脚本         |
+| src/js/utils.js                 | 文件 | 工具函数               |
+| src/js/sidebar.html             | 文件 | 侧边栏HTML界面         |
+| LICENSE                         | 文件 | Apache-2.0许可证文件   |
+| manifest.json                   | 文件 | 浏览器插件清单文件     |
+| README.md                       | 文件 | 项目说明文档           |
+| screen.png                      | 文件 | 插件截图               |
 
 ## 开发说明
 
@@ -132,17 +134,17 @@ sass src/css/sidebar.scss src/css/sidebar.css
 ### 开发流程
 
 1. Fork 本仓库并创建特性分支：
-    ```shell
-    git checkout -b feature/你的功能名称
-    ```
+   ```shell
+   git checkout -b feature/你的功能名称
+   ```
 2. 提交代码变更：
-    ```shell
-    git commit -m 'feat: 添加新功能描述'
-    ```
+   ```shell
+   git commit -m 'feat: 添加新功能描述'
+   ```
 3. 推送到分支并创建Pull Request：
-    ```shell
-    git push origin feature/你的功能名称
-    ```
+   ```shell
+   git push origin feature/你的功能名称
+   ```
 4. 等待代码审查和合并
 
 ### 代码规范
