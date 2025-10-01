@@ -45,69 +45,42 @@
 
 ## 项目结构
 
-magot/
+将选中的项目结构部分转换为表格形式：
 
-├── src/
-
-│ ├── css/ # 样式文件
-
-│ │ ├── common.scss # 通用样式（SCSS源文件）
-
-│ │ ├── common.css # 编译后的通用样式
-
-│ │ ├── common.css.map # Source map文件
-
-│ │ ├── media.scss # 媒体查询样式
-
-│ │ ├── media.css # 编译后的媒体样式
-
-│ │ ├── media.css.map # Source map文件
-
-│ │ ├── sidebar.scss # 侧边栏样式
-
-│ │ ├── sidebar.css # 编译后的侧边栏样式
-
-│ │ └── sidebar.css.map # Source map文件
-
-│ ├── icons/ # 图标资源
-
-│ │ ├── SVG/ # SVG矢量图标
-
-│ │ │ ├── icon-download.svg
-
-│ │ │ ├── icon-refresh.svg
-
-│ │ │ └── icon-settings.svg
-
-│ │ ├── icon.png # 主图标
-
-│ │ ├── icon_16.png # 16x16图标
-
-│ │ ├── icon_48.png # 48x48图标
-
-│ │ └── icon_128.png # 128x128图标
-
-│ └── js/ # JavaScript脚本
-
-│ ├── bg.js # 后台脚本（背景页）
-
-│ ├── cs.js # 内容脚本
-
-│ ├── iconpark.js # 图标库相关脚本
-
-│ ├── sidebar.js # 侧边栏功能脚本
-
-│ ├── utils.js # 工具函数
-
-│ └── sidebar.html # 侧边栏HTML界面
-
-├── LICENSE # Apache-2.0许可证文件
-
-├── manifest.json # 浏览器插件清单文件
-
-├── README.md # 项目说明文档
-
-└── screen.png # 插件截图
+| 路径 | 类型 | 描述 |
+|------|------|------|
+| magot/ | 目录 | 项目根目录 |
+| src/ | 目录 | 源代码目录 |
+| src/css/ | 目录 | 样式文件目录 |
+| src/css/common.scss | 文件 | 通用样式（SCSS源文件） |
+| src/css/common.css | 文件 | 编译后的通用样式 |
+| src/css/common.css.map | 文件 | Source map文件 |
+| src/css/media.scss | 文件 | 媒体查询样式 |
+| src/css/media.css | 文件 | 编译后的媒体样式 |
+| src/css/media.css.map | 文件 | Source map文件 |
+| src/css/sidebar.scss | 文件 | 侧边栏样式 |
+| src/css/sidebar.css | 文件 | 编译后的侧边栏样式 |
+| src/css/sidebar.css.map | 文件 | Source map文件 |
+| src/icons/ | 目录 | 图标资源目录 |
+| src/icons/SVG/ | 目录 | SVG矢量图标目录 |
+| src/icons/SVG/icon-download.svg | 文件 | 下载图标 |
+| src/icons/SVG/icon-refresh.svg | 文件 | 刷新图标 |
+| src/icons/SVG/icon-settings.svg | 文件 | 设置图标 |
+| src/icons/icon.png | 文件 | 主图标 |
+| src/icons/icon_16.png | 文件 | 16x16图标 |
+| src/icons/icon_48.png | 文件 | 48x48图标 |
+| src/icons/icon_128.png | 文件 | 128x128图标 |
+| src/js/ | 目录 | JavaScript脚本目录 |
+| src/js/bg.js | 文件 | 后台脚本（背景页） |
+| src/js/cs.js | 文件 | 内容脚本 |
+| src/js/iconpark.js | 文件 | 图标库相关脚本 |
+| src/js/sidebar.js | 文件 | 侧边栏功能脚本 |
+| src/js/utils.js | 文件 | 工具函数 |
+| src/js/sidebar.html | 文件 | 侧边栏HTML界面 |
+| LICENSE | 文件 | Apache-2.0许可证文件 |
+| manifest.json | 文件 | 浏览器插件清单文件 |
+| README.md | 文件 | 项目说明文档 |
+| screen.png | 文件 | 插件截图 |
 
 ## 开发说明
 
