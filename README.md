@@ -1,6 +1,8 @@
 # Magot - 磁力链接提取器
 
 [![Apache-2.0 License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![Gitee Repo Stars](https://img.shields.io/github/stars/ourcolour/GenDict?style=flat&logo=gitee)](https://gitee.com/ourcolour/magot)
+[![GitHub Repo Stars](https://img.shields.io/github/stars/ourcolour/GenDict?style=flat&logo=github)](https://github.com/ourcolour/magot)
 
 一款用于Chrome和Firefox浏览器的智能链接提取插件，能够自动识别并提取网页中的下载链接。
 
