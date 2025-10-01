@@ -46,36 +46,67 @@
 ## 项目结构
 
 magot/
+
 ├── src/
+
 │ ├── css/ # 样式文件
+
 │ │ ├── common.scss # 通用样式（SCSS源文件）
+
 │ │ ├── common.css # 编译后的通用样式
+
 │ │ ├── common.css.map # Source map文件
+
 │ │ ├── media.scss # 媒体查询样式
+
 │ │ ├── media.css # 编译后的媒体样式
+
 │ │ ├── media.css.map # Source map文件
+
 │ │ ├── sidebar.scss # 侧边栏样式
+
 │ │ ├── sidebar.css # 编译后的侧边栏样式
+
 │ │ └── sidebar.css.map # Source map文件
+
 │ ├── icons/ # 图标资源
+
 │ │ ├── SVG/ # SVG矢量图标
+
 │ │ │ ├── icon-download.svg
+
 │ │ │ ├── icon-refresh.svg
+
 │ │ │ └── icon-settings.svg
+
 │ │ ├── icon.png # 主图标
+
 │ │ ├── icon_16.png # 16x16图标
+
 │ │ ├── icon_48.png # 48x48图标
+
 │ │ └── icon_128.png # 128x128图标
+
 │ └── js/ # JavaScript脚本
+
 │ ├── bg.js # 后台脚本（背景页）
+
 │ ├── cs.js # 内容脚本
+
 │ ├── iconpark.js # 图标库相关脚本
+
 │ ├── sidebar.js # 侧边栏功能脚本
+
 │ ├── utils.js # 工具函数
+
 │ └── sidebar.html # 侧边栏HTML界面
+
 ├── LICENSE # Apache-2.0许可证文件
+
 ├── manifest.json # 浏览器插件清单文件
+
 ├── README.md # 项目说明文档
+
 └── screen.png # 插件截图
 
 ## 开发说明
