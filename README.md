@@ -6,7 +6,7 @@
 
 一款用于Chrome和Firefox浏览器的智能链接提取插件，能够自动识别并提取网页中的下载链接。
 
-<img src="screen.png" alt="Screen" sty[](https://)le="zoom:30%;" />
+<img src="screen.png" alt="Screen" style="zoom:30%;" />
 
 ## 功能特性
 
